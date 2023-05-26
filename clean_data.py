@@ -94,7 +94,7 @@ with open('raw_lottery_result.txt', 'r') as file:
 # Write the modified lines to a CSV file
 with open('clean_lottery_result.csv', 'w', newline='') as file:
     writer = csv.writer(file)
-    header = ["Date", "One Prize", "Two Top", "Three Top", "Two Low", "Three Fronts/Three Bottoms 1",
-              "Three Fronts/Three Bottoms 2", "Three Fronts/Three Bottoms 3", "Three Fronts/Three Bottoms 4"]
+    header = ["Date", "1st", "2T", "3T", "2L", "3F3L(1)",
+              "3F3L(2)", "3F3L(3)", "3F3L(4)"]
     writer.writerow(header)
     writer.writerows(output_lines)
